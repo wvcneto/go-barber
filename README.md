@@ -2,10 +2,6 @@
   A barber scheduling app that allows users to schedule an appointment with his favorite barber and shows to the barber his agenda for the day.
 </h4>
 
-<p align="center">
-  Technologies
-</p>
-
 ## :rocket: Technologies
 
 This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
@@ -58,7 +54,7 @@ npm run dev
 
 ---
 
-By Walter Neto (https://www.linkedin.com/in/walter-neto-a736548b/)
+By Walter Neto (https://www.linkedin.com/in/wvcneto)
 
 [nodejs]: https://nodejs.org/
 [yarn]: https://yarnpkg.com/
