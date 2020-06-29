@@ -9,15 +9,6 @@ This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketse
 -  [Node.js][nodejs]
 -  [Express](https://expressjs.com/)
 -  [Nodemon](https://nodemon.io/)
--  [Sucrase](https://github.com/alangpierce/sucrase)
--  [Docker](https://www.docker.com/docker-community)
--  [Sequelize](http://docs.sequelizejs.com/)
--  [PostgreSQL](https://www.postgresql.org/)
--  [node-postgres](https://www.npmjs.com/package/pg)
--  [JWT](https://jwt.io/)
--  [Multer](https://github.com/expressjs/multer)
--  [Bcrypt](https://www.npmjs.com/package/bcrypt)
--  [Yup](https://www.npmjs.com/package/yup)
 -  [VS Code][vc] with [ESLint][vceslint]
 
 ---
