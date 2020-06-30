@@ -15,6 +15,7 @@ This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketse
 -  [DBeaver](https://dbeaver.io/)
 -  [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 -  [JWT](https://www.npmjs.com/package/jsonwebtoken)
+-  [Multer](https://www.npmjs.com/package/multer)
 
 ---
 
