@@ -8,8 +8,12 @@ This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketse
 
 -  [Node.js][nodejs]
 -  [Express](https://expressjs.com/)
--  [Nodemon](https://nodemon.io/)
 -  [VS Code][vc] with [ESLint][vceslint]
+-  [Postgres](https://www.postgresql.org/)
+-  [TypeORM](https://typeorm.io/)
+-  [Docker](https://www.docker.com/)
+-  [DBeaver](https://dbeaver.io/)
+-  [bcryptjs](https://www.npmjs.com/package/bcryptjs)
 
 ---
 
@@ -25,22 +29,16 @@ _(During development, Yarn was used as a dependency manager)_
 ## (SQL)Execute Migrations.
 
 ```bash
-yarn sequelize db:migrate
+yarn typeorm migration:run
 ```
-_(During development, Sequelized was used as a ORM)_
+_(During development, TypeORM was used as a ORM)_
 
 ---
 
 ## Run
 
 ```bash
-yarn dev
-```
-
-or
-
-```bash
-npm run dev
+yarn dev:server
 ```
 
 ---
