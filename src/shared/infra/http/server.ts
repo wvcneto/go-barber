@@ -9,6 +9,7 @@ import uploadConfig from '@config/upload';
 import AppError from '@shared/errors/AppError';
 
 import '@shared/infra/typeorm';
+import '@shared/container';
 
 const app = express();
 app.use(cors());
@@ -33,5 +34,5 @@ app.use((err: Error, request: Request, response: Response, _: NextFunction) => {
 });
 
 app.listen(3333, () => {
-  console.log('Backend Started! port:3333');
+  console.log('🚀 Backend Started! port:3333');
 });
