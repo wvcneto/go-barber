@@ -1,5 +1,7 @@
 import 'reflect-metadata';
 
+import AppError from '@shared/errors/AppError';
+
 import CreateAppointmentService from './CreateAppointmentService';
 import FakeAppointmentsRepository from '../repositories/fakes/FakeAppointmentsRepository';
 
@@ -17,5 +19,26 @@ describe('CreateAppointment', () => {
 
     expect(appointment).toHaveProperty('id');
     expect(appointment.provider_id).toBe('123456789');
+  });
+
+  it('should not be able to create two appointments on the same date.', async () => {
+    const fakeAppointmentsRepository = new FakeAppointmentsRepository();
+    const createAppointment = new CreateAppointmentService(
+      fakeAppointmentsRepository,
+    );
+
+    const appointmentDate = new Date(2020, 4, 17, 11); // 17/05/2020 11h
+
+    await createAppointment.execute({
+      date: appointmentDate,
+      provider_id: '123456789',
+    });
+
+    expect(
+      createAppointment.execute({
+        date: appointmentDate,
+        provider_id: '123456789',
+      }),
+    ).rejects.toBeInstanceOf(AppError);
   });
 });
