@@ -12,7 +12,7 @@ interface IRequest {
 }
 
 @injectable()
-class UpdateUserAvataService {
+class UpdateUserAvatarService {
   constructor(
     @inject('StorageProvider')
     private storageProvider: IStorageProvider,
@@ -42,4 +42,4 @@ class UpdateUserAvataService {
   }
 }
 
-export default UpdateUserAvataService;
+export default UpdateUserAvatarService;
